@@ -492,7 +492,7 @@ namespace AssetStudio
                             .AppendLine($"Type {objectReader.type}")
                             .AppendLine($"PathID {objectInfo.m_PathID}")
                             .Append(e);
-                        Logger.Error(sb.ToString());
+                        Logger.Warning(sb.ToString());
                     }
 
                     Progress.Report(++i, progressCount);
